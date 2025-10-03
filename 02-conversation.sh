@@ -3,4 +3,4 @@
 echo "Ramesh:: Hi suresh, how are you ?"
 echo "Suresh:: Hi ramesh,i am fine. how are you ?"
 echo "Ramesh:: what are you learning recently ?"
-echo "Suresh:: i am learning shell-scripting"
+echo "Suresh:: i am learning"
