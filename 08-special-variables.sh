@@ -7,3 +7,5 @@ echo "current directory: $PWD"
 echo "who is running this: $USER"
 echo "Home directory of user: $HOME"
 echo "PID of this script execution: $$"
+sleep 50 &
+echo "PID of last excution command in background is : $!"
