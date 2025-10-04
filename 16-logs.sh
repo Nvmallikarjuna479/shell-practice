@@ -26,7 +26,7 @@ VALIDATE(){
     fi 
 }
 dnf list installed mysql &>>$LOG_FILE
-if [ $1 -ne 0 ]; then
+if [ "$1" -ne "0" ]; then
     dnf install mysql -y  &>>$LOG_FILE
     VALIDATE $? "mysql"
 else
