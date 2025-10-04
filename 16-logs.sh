@@ -8,7 +8,7 @@ LOGS_DIR="/var/log/shell-script"
 SCRIPT_NAME=$(echo  $0 | cut -d "." -f1)
 LOG_FILE="$LOGS_DIR/$SCRIPT_NAME.log"
 
-mkidr -p $LOGS_DIR
+mkdir -p $LOGS_DIR
 echo "Script started executed at: $(date)"
 
 USERID=$(id -u)
@@ -16,8 +16,6 @@ if [ $USERID -ne 0 ]; then
     echo  "ERROR:: Please run this script with root previllages"
     exit 1
 fi
-
-mkdir -p $LOGS_DIR
 
 VALIDATE(){
     if [ $1 -ne 0 ]; then
