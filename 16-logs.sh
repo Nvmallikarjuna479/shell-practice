@@ -16,7 +16,7 @@ SCRIPT_NAME=$(echo  $0 | cut -d "." -f1)
 LOG_FILE="$LOGS_DIR/$SCRIPT_NAME.log"
 
 mkdir -p $LOGS_DIR
-echo "Script started executed at: $(date)"
+echo "Script started executed at: $(date)" | tee -a $LOG_FILE
 
 VALIDATE(){
     if [ $1 -ne 0 ]; then
